@@ -14,6 +14,10 @@
     font-family: 'Roboto';
 }
 
+.cardo {
+    font-family: 'Cardo';
+}
+
 .my-10 {
     margin-block: 10%;
 }
@@ -28,14 +32,20 @@
 }
 
 .btn-red {
-    padding: 8px;
-    border-radius: 100%;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid;
+}
+
+footer .btn-red {
+    border: 1px solid white;
 }
 
 .btn-red:hover,
 .btn-red:focus {
-    color: white;
+    color: white !important;
     background-color: red !important;
+    border: 1px solid red !important;
     transition: 0.2s ease;
     scale: 1.1;
 }
@@ -172,8 +182,15 @@ button {
     object-position: top;
 }
 
-.grid-person .card .card-footer a i {
+.grid-person .card .card-footer {
+    display: flex;
+    gap: 10px;
+}
+
+.grid-person .card .card-footer a i,
+.footer-bg a i {
     font-size: 1.6rem;
+    display: table;
 }
 
 /* carousel */
